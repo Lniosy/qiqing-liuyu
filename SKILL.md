@@ -13,7 +13,7 @@ description: |
   (7) 写作任务中需要注入个人声音和情感温度
 ---
 
-# Emotion Soul — AI 七情六欲增强
+# qiqing-liuyu — AI 情感与人格增强
 
 ## 核心哲学
 
