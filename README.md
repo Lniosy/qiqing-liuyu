@@ -5,7 +5,8 @@
 </p>
 
 <p align="center">
-  <img src="https://api.star-history.com/svg?repos=Lniosy/qiqing-liuyu&type=Date" alt="Star History Chart" width="600">
+  <img src="https://img.shields.io/badge/dynamic/json?color=orange&label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FLniosy%2Fqiqing-liuyu" alt="Star Count">
+  <img src="http://ghchart.rshah.org/Lniosy/qiqing-liuyu" alt="Star History Chart" width="600">
 </p>
 
 <p align="center">
