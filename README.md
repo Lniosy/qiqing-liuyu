@@ -272,6 +272,14 @@ AI 味检测报告
 - 🔍 **检测规则**：发现新的 AI 味模式
 - 📝 **示例**：更多正反对比示例
 
+## 💬 交流群
+
+扫码加入微信交流群，一起讨论 AI 人格增强、去 AI 味、写作优化等话题：
+
+<p align="center">
+  <img src="assets/wechat-qr.jpg" width="200" alt="微信交流群二维码">
+</p>
+
 ## 📄 许可证
 
 MIT License
