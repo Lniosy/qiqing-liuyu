@@ -49,7 +49,7 @@ TRANSLATION_TONE = [
     "从我的角度来看", "在这种情况下", "在一定程度上",
     "不可避免地", "基于此", "与其说", "也就是说",
     "对此", "关于这个问题", "进行了讨论", "取得了进展",
-    "具有挑战性", "我认为", "值得商榷",
+    "具有挑战性",
 ]
 
 
@@ -123,7 +123,7 @@ def check_text(text: str) -> dict:
         if std_dev < 10:
             issues.append({"type": "句子长度过于均匀", "avg": round(avg_len, 1), "std": round(std_dev, 1), "severity": "medium"})
 
-    # 10. 第一人称检查
+    # 11. 第一人称检查
     has_i = "我" in text
     if not has_i and char_count > 200:
         issues.append({"type": "缺少第一人称'我'", "severity": "medium"})
@@ -140,7 +140,7 @@ def check_text(text: str) -> dict:
         "medium": medium,
         "info": info,
         "issues": issues,
-        "score": max(0, 100 - high * 15 - medium * 5 - info * 1),
+        "score": max(0, 100 - high * 15 - medium * 5),
     }
 
 
@@ -177,12 +177,21 @@ def print_report(text: str):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) > 1:
-        with open(sys.argv[1], "r", encoding="utf-8") as f:
+    use_json = "--json" in sys.argv
+    args = [a for a in sys.argv[1:] if a != "--json"]
+
+    if args:
+        with open(args[0], "r", encoding="utf-8") as f:
             text = f.read()
+    elif not sys.stdin.isatty():
+        text = sys.stdin.read()
     else:
         print("用法: python3 ai_pattern_checker.py <文件路径>")
-        print("     echo '文本' | python3 ai_pattern_checker.py /dev/stdin")
+        print("     echo '文本' | python3 ai_pattern_checker.py")
+        print("     python3 ai_pattern_checker.py <文件路径> --json")
         sys.exit(1)
-    
-    print_report(text)
+
+    if use_json:
+        print(json.dumps(check_text(text), ensure_ascii=False, indent=2))
+    else:
+        print_report(text)
