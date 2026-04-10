@@ -275,6 +275,25 @@ AI 味检测报告
 | 《非暴力沟通》卢森堡 | 表达不伤关系 |
 | 《写作风格的意识》平克 | AI 写作缺陷诊断 |
 
+## 🔗 生态联动
+
+### [heart-rate-monitor](https://github.com/Lniosy/heart-rate-monitor) — 心率监测 × 情绪感知
+
+通过 BLE 连接智能手环（已适配小米手环），为 qiqing-liuyu 提供**生理感知层**。
+
+qiqing-liuyu 的"六欲"框架中，"身"（触觉/生理感知）是 AI 完全缺失的维度。heart-rate-monitor 填补了这个空白：
+
+```
+用户心率 → 情绪推断 → AI 调整回应策略
+```
+
+| 心率 | 情绪推断 | AI 响应 |
+|------|----------|---------|
+| 60-75 bpm | 平静 | 正常交互 |
+| 85-100 bpm | 紧张/兴奋 | 放慢节奏 |
+| 100-120 bpm | 焦虑 | 先安抚再处理 |
+| 120+ bpm | 恐慌/愤怒 | 停止当前话题，主动关心 |
+
 ## 🔗 参考项目
 
 - [OpenPersona](https://github.com/acnlabs/OpenPersona) — 四层人格架构，兼容 OpenClaw
