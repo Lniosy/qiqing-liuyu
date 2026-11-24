@@ -19,6 +19,7 @@
   <img src="https://img.shields.io/badge/AI-Emotional%20Intelligence-blue" alt="AI EQ">
   <img src="https://img.shields.io/badge/lang-中文-red" alt="Chinese">
   <img src="https://img.shields.io/badge/platform-OpenClaw-purple" alt="OpenClaw">
+  <a href="https://x.com/Lniosytest"><img src="https://img.shields.io/badge/Follow-%40Lniosytest-black?logo=x&logoColor=white" alt="Follow @Lniosytest"></a>
 </p>
 
 ---
@@ -420,6 +421,15 @@ MIT License
   如果这个项目对你有帮助，欢迎给个 ⭐ Star，你的支持是我持续更新的动力！
   <br/>
   <a href="https://github.com/Lniosy"><img src="https://img.shields.io/badge/author-Lniosy-blue" alt="Lniosy"></a>
+</p>
+
+<p align="center">
+  关注作者 <strong>李天才</strong> <a href="https://x.com/Lniosytest">@Lniosytest</a>，个人站 <a href="https://litiancai.vercel.app">litiancai.vercel.app</a>
+  <br/>
+  持续分享 AI 人格/Prompt 玩法、开源工具与独立开发实践。
+  <br/>
+  <a href="https://x.com/Lniosytest"><img src="https://img.shields.io/badge/Follow-%40Lniosytest-black?logo=x&logoColor=white" alt="Follow @Lniosytest"></a>
+  <a href="https://litiancai.vercel.app"><img src="https://img.shields.io/badge/website-litiancai.vercel.app-blue" alt="litiancai.vercel.app"></a>
 </p>
 
 <p align="center">
